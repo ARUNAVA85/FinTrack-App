@@ -2,7 +2,7 @@
 
 A scalable Spring Boot backend for personal finance tracking, featuring JWT authentication, automated transaction management, and spending analytics.
 
-## 🚀 Features
+## Features
 
 - **JWT Authentication**: Secure login and registration with access and refresh tokens.
 - **Transaction Management**: Full CRUD operations for income and expenses.
@@ -11,7 +11,7 @@ A scalable Spring Boot backend for personal finance tracking, featuring JWT auth
 - **Spending Analytics**: Real-time summary of spending habits by category.
 - **Webhooks**: Mock endpoints for automatic updates from banks/UPI.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Java Spring Boot 3.2.0
 - **Security**: Spring Security + JWT (jjwt)
@@ -19,13 +19,13 @@ A scalable Spring Boot backend for personal finance tracking, featuring JWT auth
 - **Object Mapping**: ModelMapper
 - **Build Tool**: Maven
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Java 17
 - Maven
 - PostgreSQL Database
 
-## ⚙️ Configuration
+## Configuration
 
 The application uses the following environment variables:
 
@@ -36,7 +36,7 @@ Key settings in `src/main/resources/application.properties`:
 - `jwt.access-token-expiration`: 30 minutes (1800000ms)
 - `jwt.refresh-token-expiration`: 30 days (2592000000ms)
 
-## 🏗️ Architecture
+## Architecture
 
 Following SOLID principles and clean architecture:
 - `config`: Security, CORS, and general application configuration.
@@ -47,7 +47,7 @@ Following SOLID principles and clean architecture:
 - `service`: Business logic implementation.
 - `security`: JWT filter, authentication provider, and custom user details.
 
-## 🚦 API Endpoints
+## API Endpoints
 
 ### Auth
 - `POST /api/auth/register`: Create new account
@@ -65,7 +65,7 @@ Following SOLID principles and clean architecture:
 - `GET /api/categories`: List transaction categories
 - `POST /api/categories`: Create new category
 
-## 🧪 Development
+## Development
 
 To run the backend locally:
 ```bash
